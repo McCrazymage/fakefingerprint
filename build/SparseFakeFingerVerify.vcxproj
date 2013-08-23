@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B69304AC-CAFE-4F7F-8FA2-30562213B490}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>SparseFakeFingerVerify</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\livdet\sparse\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SparseFakeFingerVerify.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SparseFakeFingerVerify</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\livdet\sparse\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SparseFakeFingerVerify.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SparseFakeFingerVerify</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\livdet\sparse\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SparseFakeFingerVerify.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SparseFakeFingerVerify</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\livdet\sparse\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SparseFakeFingerVerify.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SparseFakeFingerVerify</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:/livdet/sparse/build/Debug/SparseFakeFingerVerify.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;D:\opencv\build\lib\Debug\opencv_calib3d246d.lib;D:\opencv\build\lib\Debug\opencv_contrib246d.lib;D:\opencv\build\lib\Debug\opencv_core246d.lib;D:\opencv\build\lib\Debug\opencv_features2d246d.lib;D:\opencv\build\lib\Debug\opencv_flann246d.lib;D:\opencv\build\lib\Debug\opencv_gpu246d.lib;D:\opencv\build\lib\Debug\opencv_highgui246d.lib;D:\opencv\build\lib\Debug\opencv_imgproc246d.lib;D:\opencv\build\lib\Debug\opencv_legacy246d.lib;D:\opencv\build\lib\Debug\opencv_ml246d.lib;D:\opencv\build\lib\Debug\opencv_nonfree246d.lib;D:\opencv\build\lib\Debug\opencv_objdetect246d.lib;D:\opencv\build\lib\Debug\opencv_ocl246d.lib;D:\opencv\build\lib\Debug\opencv_photo246d.lib;D:\opencv\build\lib\Debug\opencv_stitching246d.lib;D:\opencv\build\lib\Debug\opencv_superres246d.lib;D:\opencv\build\lib\Debug\opencv_ts246d.lib;D:\opencv\build\lib\Debug\opencv_video246d.lib;D:\opencv\build\lib\Debug\opencv_videostab246d.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_thread-vc100-mt-gd-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_timer-vc100-mt-gd-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_date_time-vc100-mt-gd-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_system-vc100-mt-gd-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_chrono-vc100-mt-gd-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_regex-vc100-mt-gd-1_54.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>D:/livdet/sparse/build/Debug/SparseFakeFingerVerify.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFile>D:/livdet/sparse/build/Debug/SparseFakeFingerVerify.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:/livdet/sparse/build/Release/SparseFakeFingerVerify.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;D:\opencv\build\lib\Release\opencv_calib3d246.lib;D:\opencv\build\lib\Release\opencv_contrib246.lib;D:\opencv\build\lib\Release\opencv_core246.lib;D:\opencv\build\lib\Release\opencv_features2d246.lib;D:\opencv\build\lib\Release\opencv_flann246.lib;D:\opencv\build\lib\Release\opencv_gpu246.lib;D:\opencv\build\lib\Release\opencv_highgui246.lib;D:\opencv\build\lib\Release\opencv_imgproc246.lib;D:\opencv\build\lib\Release\opencv_legacy246.lib;D:\opencv\build\lib\Release\opencv_ml246.lib;D:\opencv\build\lib\Release\opencv_nonfree246.lib;D:\opencv\build\lib\Release\opencv_objdetect246.lib;D:\opencv\build\lib\Release\opencv_ocl246.lib;D:\opencv\build\lib\Release\opencv_photo246.lib;D:\opencv\build\lib\Release\opencv_stitching246.lib;D:\opencv\build\lib\Release\opencv_superres246.lib;D:\opencv\build\lib\Release\opencv_ts246.lib;D:\opencv\build\lib\Release\opencv_video246.lib;D:\opencv\build\lib\Release\opencv_videostab246.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_thread-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_timer-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_date_time-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_system-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_chrono-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_regex-vc100-mt-1_54.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>D:/livdet/sparse/build/Release/SparseFakeFingerVerify.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/livdet/sparse/build/Release/SparseFakeFingerVerify.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:/livdet/sparse/build/MinSizeRel/SparseFakeFingerVerify.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;D:\opencv\build\lib\Release\opencv_calib3d246.lib;D:\opencv\build\lib\Release\opencv_contrib246.lib;D:\opencv\build\lib\Release\opencv_core246.lib;D:\opencv\build\lib\Release\opencv_features2d246.lib;D:\opencv\build\lib\Release\opencv_flann246.lib;D:\opencv\build\lib\Release\opencv_gpu246.lib;D:\opencv\build\lib\Release\opencv_highgui246.lib;D:\opencv\build\lib\Release\opencv_imgproc246.lib;D:\opencv\build\lib\Release\opencv_legacy246.lib;D:\opencv\build\lib\Release\opencv_ml246.lib;D:\opencv\build\lib\Release\opencv_nonfree246.lib;D:\opencv\build\lib\Release\opencv_objdetect246.lib;D:\opencv\build\lib\Release\opencv_ocl246.lib;D:\opencv\build\lib\Release\opencv_photo246.lib;D:\opencv\build\lib\Release\opencv_stitching246.lib;D:\opencv\build\lib\Release\opencv_superres246.lib;D:\opencv\build\lib\Release\opencv_ts246.lib;D:\opencv\build\lib\Release\opencv_video246.lib;D:\opencv\build\lib\Release\opencv_videostab246.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_thread-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_timer-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_date_time-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_system-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_chrono-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_regex-vc100-mt-1_54.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>D:/livdet/sparse/build/MinSizeRel/SparseFakeFingerVerify.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/livdet/sparse/build/MinSizeRel/SparseFakeFingerVerify.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:/livdet/sparse/build/RelWithDebInfo/SparseFakeFingerVerify.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/opencv/build;D:/opencv/include;D:/opencv/include/opencv;D:/opencv/modules/core/include;D:/opencv/modules/imgproc/include;D:/opencv/modules/flann/include;D:/opencv/modules/highgui/include;D:/opencv/modules/features2d/include;D:/opencv/modules/calib3d/include;D:/opencv/modules/ml/include;D:/opencv/modules/video/include;D:/opencv/modules/objdetect/include;D:/opencv/modules/contrib/include;D:/opencv/modules/photo/include;D:/opencv/modules/legacy/include;D:/opencv/modules/gpu/include;D:/opencv/modules/ocl/include;D:/opencv/modules/nonfree/include;D:/opencv/modules/stitching/include;D:/opencv/modules/superres/include;D:/opencv/modules/ts/include;D:/opencv/modules/videostab/include;D:/livdet/sparse/EIGEN3_INCLUDE_DIR;D:/Program Files/boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;D:\opencv\build\lib\Release\opencv_calib3d246.lib;D:\opencv\build\lib\Release\opencv_contrib246.lib;D:\opencv\build\lib\Release\opencv_core246.lib;D:\opencv\build\lib\Release\opencv_features2d246.lib;D:\opencv\build\lib\Release\opencv_flann246.lib;D:\opencv\build\lib\Release\opencv_gpu246.lib;D:\opencv\build\lib\Release\opencv_highgui246.lib;D:\opencv\build\lib\Release\opencv_imgproc246.lib;D:\opencv\build\lib\Release\opencv_legacy246.lib;D:\opencv\build\lib\Release\opencv_ml246.lib;D:\opencv\build\lib\Release\opencv_nonfree246.lib;D:\opencv\build\lib\Release\opencv_objdetect246.lib;D:\opencv\build\lib\Release\opencv_ocl246.lib;D:\opencv\build\lib\Release\opencv_photo246.lib;D:\opencv\build\lib\Release\opencv_stitching246.lib;D:\opencv\build\lib\Release\opencv_superres246.lib;D:\opencv\build\lib\Release\opencv_ts246.lib;D:\opencv\build\lib\Release\opencv_video246.lib;D:\opencv\build\lib\Release\opencv_videostab246.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_thread-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_timer-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_date_time-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_system-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_chrono-vc100-mt-1_54.lib;D:\Program Files\boost_1_54_0\stage\lib\libboost_regex-vc100-mt-1_54.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>D:/livdet/sparse/build/RelWithDebInfo/SparseFakeFingerVerify.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFile>D:/livdet/sparse/build/RelWithDebInfo/SparseFakeFingerVerify.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/livdet/sparse/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/livdet/sparse -BD:/livdet/sparse/build --check-stamp-file D:\livdet\sparse\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/livdet/sparse/CMakeLists.txt;D:\livdet\sparse\CMakeLists.txt;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeSystem.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeCCompiler.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindEigen3.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;D:\livdet\sparse\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\livdet\sparse\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/livdet/sparse/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/livdet/sparse -BD:/livdet/sparse/build --check-stamp-file D:\livdet\sparse\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/livdet/sparse/CMakeLists.txt;D:\livdet\sparse\CMakeLists.txt;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeSystem.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeCCompiler.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindEigen3.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;D:\livdet\sparse\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\livdet\sparse\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/livdet/sparse/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/livdet/sparse -BD:/livdet/sparse/build --check-stamp-file D:\livdet\sparse\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/livdet/sparse/CMakeLists.txt;D:\livdet\sparse\CMakeLists.txt;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeSystem.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeCCompiler.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindEigen3.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;D:\livdet\sparse\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\livdet\sparse\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/livdet/sparse/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/livdet/sparse -BD:/livdet/sparse/build --check-stamp-file D:\livdet\sparse\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/livdet/sparse/CMakeLists.txt;D:\livdet\sparse\CMakeLists.txt;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeSystem.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeCCompiler.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\livdet\sparse\build\CMakeFiles\2.8.10.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindEigen3.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;D:\livdet\sparse\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\livdet\sparse\build\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FeatureExtract.h" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="FeatureExtract.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/livdet/sparse/build/ZERO_CHECK.vcxproj">
+      <Project>3C271781-0560-4E4A-9C7D-1651E329716E</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

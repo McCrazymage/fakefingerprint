@@ -1,0 +1,31 @@
+﻿生成启动时间为 2013/8/22 16:51:33。
+     1>项目“D:\livdet\sparse\build\SparseFakeFingerVerify.vcxproj”在节点 3 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“SparseFakeFingerVerify.dir\Debug\SparseFakeFingerVerify.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         所有输出均为最新。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:/opencv/build /ID:/opencv/include /ID:/opencv/include/opencv /ID:/opencv/modules/core/include /ID:/opencv/modules/imgproc/include /ID:/opencv/modules/flann/include /ID:/opencv/modules/highgui/include /ID:/opencv/modules/features2d/include /ID:/opencv/modules/calib3d/include /ID:/opencv/modules/ml/include /ID:/opencv/modules/video/include /ID:/opencv/modules/objdetect/include /ID:/opencv/modules/contrib/include /ID:/opencv/modules/photo/include /ID:/opencv/modules/legacy/include /ID:/opencv/modules/gpu/include /ID:/opencv/modules/ocl/include /ID:/opencv/modules/nonfree/include /ID:/opencv/modules/stitching/include /ID:/opencv/modules/superres/include /ID:/opencv/modules/ts/include /ID:/opencv/modules/videostab/include /ID:/livdet/sparse/EIGEN3_INCLUDE_DIR /I"D:/Program Files/boost_1_54_0" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"SparseFakeFingerVerify.dir\Debug\\" /Fd"D:/livdet/sparse/build/Debug/SparseFakeFingerVerify.pdb" /Gd /TP /analyze- /errorReport:prompt FeatureExtract.cpp  /Zm1000 
+         FeatureExtract.cpp
+     1>FeatureExtract.cpp(248): warning C4018: “<”: 有符号/无符号不匹配
+     1>FeatureExtract.cpp(254): warning C4018: “<”: 有符号/无符号不匹配
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\livdet\sparse\build\Debug\SparseFakeFingerVerify.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib D:\opencv\build\lib\Debug\opencv_calib3d246d.lib D:\opencv\build\lib\Debug\opencv_contrib246d.lib D:\opencv\build\lib\Debug\opencv_core246d.lib D:\opencv\build\lib\Debug\opencv_features2d246d.lib D:\opencv\build\lib\Debug\opencv_flann246d.lib D:\opencv\build\lib\Debug\opencv_gpu246d.lib D:\opencv\build\lib\Debug\opencv_highgui246d.lib D:\opencv\build\lib\Debug\opencv_imgproc246d.lib D:\opencv\build\lib\Debug\opencv_legacy246d.lib D:\opencv\build\lib\Debug\opencv_ml246d.lib D:\opencv\build\lib\Debug\opencv_nonfree246d.lib D:\opencv\build\lib\Debug\opencv_objdetect246d.lib D:\opencv\build\lib\Debug\opencv_ocl246d.lib D:\opencv\build\lib\Debug\opencv_photo246d.lib D:\opencv\build\lib\Debug\opencv_stitching246d.lib D:\opencv\build\lib\Debug\opencv_superres246d.lib D:\opencv\build\lib\Debug\opencv_ts246d.lib D:\opencv\build\lib\Debug\opencv_video246d.lib D:\opencv\build\lib\Debug\opencv_videostab246d.lib "D:\Program Files\boost_1_54_0\stage\lib\libboost_thread-vc100-mt-gd-1_54.lib" "D:\Program Files\boost_1_54_0\stage\lib\libboost_timer-vc100-mt-gd-1_54.lib" "D:\Program Files\boost_1_54_0\stage\lib\libboost_date_time-vc100-mt-gd-1_54.lib" "D:\Program Files\boost_1_54_0\stage\lib\libboost_system-vc100-mt-gd-1_54.lib" "D:\Program Files\boost_1_54_0\stage\lib\libboost_chrono-vc100-mt-gd-1_54.lib" "D:\Program Files\boost_1_54_0\stage\lib\libboost_regex-vc100-mt-gd-1_54.lib" /MANIFEST /ManifestFile:"SparseFakeFingerVerify.dir\Debug\SparseFakeFingerVerify.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:/livdet/sparse/build/Debug/SparseFakeFingerVerify.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/livdet/sparse/build/Debug/SparseFakeFingerVerify.lib" /MACHINE:X86 SparseFakeFingerVerify.dir\Debug\SparseFakeFingerVerify.exe.embed.manifest.res
+         SparseFakeFingerVerify.dir\Debug\main.obj
+         SparseFakeFingerVerify.dir\Debug\FeatureExtract.obj  /machine:X86 /debug 
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"SparseFakeFingerVerify.dir\Debug\SparseFakeFingerVerify.exe.embed.manifest" /manifest SparseFakeFingerVerify.dir\Debug\SparseFakeFingerVerify.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         SparseFakeFingerVerify.vcxproj -> D:\livdet\sparse\build\Debug\SparseFakeFingerVerify.exe
+       FinalizeBuildStatus:
+         正在删除文件“SparseFakeFingerVerify.dir\Debug\SparseFakeFingerVerify.unsuccessfulbuild”。
+         正在对“SparseFakeFingerVerify.dir\Debug\SparseFakeFingerVerify.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\livdet\sparse\build\SparseFakeFingerVerify.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.92

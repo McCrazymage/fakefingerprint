@@ -1,0 +1,3 @@
+D:/livdet/sparse/build/CMakeFiles/ALL_BUILD.dir
+D:/livdet/sparse/build/CMakeFiles/SparseFakeFingerVerify.dir
+D:/livdet/sparse/build/CMakeFiles/ZERO_CHECK.dir
